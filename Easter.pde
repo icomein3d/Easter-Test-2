@@ -3,12 +3,17 @@ void setup()
   size(500, 500);
   ship = new Ship(); 
   comet = new Comets();
+  ship1 = new AIShip(); 
+  ship2= new AIShip(); 
+  ship3 = new AIShip(); 
 }
 
 boolean[] keys = new boolean[526];
 
 Ship ship;
 Comets comet;
+AIShip ship1, ship2, ship3;
+
 
 
 
@@ -19,6 +24,12 @@ void draw()
   background(0);
   ship.display();
   ship.update();
+  ship1.update();
+  ship1.cometShape();
+    ship2.update();
+  ship2.cometShape();
+    ship3.update();
+  ship3.cometShape();
   comet.display(40,40);
 }
 

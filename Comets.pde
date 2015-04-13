@@ -42,13 +42,11 @@ class Comets extends GameObject
 //    comet.position.x = random(0, width);
 //    comet.position.y = random(0, height);
 //    
+
+    strokeWeight(3);
     ellipse(position.x, position.y, size, size);
     
-    for(int i = 0 ; i >= ship.position.x ; i ++)
-    {
-     position.x += i; 
-    }
-    
+
 
    
     

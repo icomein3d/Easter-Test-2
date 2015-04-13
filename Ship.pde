@@ -9,6 +9,19 @@ class Ship extends GameObject
   {
     super();
   } 
+  
+  void cometShape()
+  {
+    
+    stroke(255);
+    pushMatrix();
+    translate(position.x, position.y);
+    rotate(theta);
+     strokeWeight(3);
+    ellipse(position.x, position.y, w, w);
+    popMatrix();
+    
+  }
 
   void display()
   {
@@ -68,8 +81,8 @@ class Ship extends GameObject
       stroke(200,30,0);
 
 
-      line(0, halfW, -8, 10);
-      line(0, halfW, 8, 10);
+      line(0, halfW, -8, 11);
+      line(0, halfW, 8, 11);
 
       popMatrix();
     }
